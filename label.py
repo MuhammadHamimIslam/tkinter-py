@@ -14,4 +14,8 @@ photo = PhotoImage(file="assets/cat_img.png") # open the .png image
 img = Label(root, image=photo) # set the image as Label 
 img.pack(expand=True) # pack it
 
+# showing both image and text
+image = Label(root, image=photo, text="Beautiful cat's image", compound=TOP)
+image.pack()
+
 root.mainloop()
